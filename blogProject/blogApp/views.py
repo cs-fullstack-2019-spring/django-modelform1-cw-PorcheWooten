@@ -1,12 +1,12 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from .forms import Blog
+from .forms import NewBlog
 
 
 # Create your views here.
 # check validation and saves data , sends form to index
 def index(request):
-    newForm = Blog()
+    newForm = NewBlog()
 
     if request.method == "POST":
         print("Got it!!")
